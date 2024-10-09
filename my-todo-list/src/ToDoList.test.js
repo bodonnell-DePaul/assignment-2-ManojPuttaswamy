@@ -8,7 +8,7 @@ describe('TodoList Component', () => {
 
   test('renders the title', () => {
     render(<TodoList />);
-    const titleElement = screen.getByText(/Assignment 2: ToDo List/i);
+    const titleElement = screen.getByText(/Assignment 2: Manoj's ToDo List/i);
     expect(titleElement).toBeInTheDocument();
   });
 
@@ -26,7 +26,7 @@ describe('TodoList Component', () => {
   test('renders todo items', () => {
     render(<TodoList />);
     const todoItems = screen.getAllByRole('tab');
-    expect(todoItems.length).toBe(4); // Assuming there are 4 todos in the initial state
+    expect(todoItems.length).toBe(4); // Assuming there are 4 todoItems in the initial state
   });
 
   test('renders todo items with correct titles', () => {
